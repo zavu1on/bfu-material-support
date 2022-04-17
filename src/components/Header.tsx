@@ -62,7 +62,7 @@ export const AdminHeader: FC = () => {
               <NavLink to='/admin/notifications/'>Объявления</NavLink>
             </li>
             <li>
-              <NavLink to='/admin/companies/'>Список компаний</NavLink>
+              <NavLink to='/admin/companies/'>Список кампаний</NavLink>
             </li>
             <li>
               <NavLink to='/admin/requests/'>Список заявок</NavLink>
@@ -147,7 +147,7 @@ export const AdminHeader: FC = () => {
           <NavLink to='/admin/notifications/'>Объявления</NavLink>
         </li>
         <li>
-          <NavLink to='/admin/companies/'>Список компаний</NavLink>
+          <NavLink to='/admin/companies/'>Список кампаний</NavLink>
         </li>
         <li>
           <NavLink to='/admin/requests/'>Список заявок</NavLink>
@@ -203,7 +203,7 @@ export const StudentHeader: FC = () => {
           </a>
           <ul className='right hide-on-med-and-down'>
             <li>
-              <NavLink to='/companies/'>Список компаний</NavLink>
+              <NavLink to='/companies/'>Список кампаний</NavLink>
             </li>
             <li>
               <a
@@ -279,7 +279,7 @@ export const StudentHeader: FC = () => {
           </a>
         </li>
         <li>
-          <NavLink to='/companies/'>Список компаний</NavLink>
+          <NavLink to='/companies/'>Список кампаний</NavLink>
         </li>
       </ul>
     </>

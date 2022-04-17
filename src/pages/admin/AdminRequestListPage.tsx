@@ -198,7 +198,7 @@ export const AdminRequestListPage: FC = () => {
                   encodeURIComponent(event.target.value)
               }}
             >
-              <option value={-1}>Все номинации</option>
+              <option value={-1}>Все критерии</option>
               {nominations.map(n => {
                 return (
                   <option
@@ -211,7 +211,7 @@ export const AdminRequestListPage: FC = () => {
                 )
               })}
             </select>
-            <label>Номинация</label>
+            <label>Критерий</label>
           </div>
           <div className='col s3 input-field'>
             <select
@@ -268,7 +268,7 @@ export const AdminRequestListPage: FC = () => {
           <thead>
             <tr>
               <th>ФИО</th>
-              <th>Номинация</th>
+              <th>Критерий</th>
               <th>Институт</th>
               <th>Направление</th>
               <th>Обучение</th>
@@ -316,7 +316,7 @@ export const AdminRequestListPage: FC = () => {
                 </option>
               ))}
             </select>
-            <label>Номинация</label>
+            <label>Критерий</label>
           </div>
           <div className='input-field'>
             <select ref={faceRef} multiple>

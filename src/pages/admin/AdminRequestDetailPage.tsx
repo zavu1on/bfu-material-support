@@ -114,13 +114,13 @@ export const AdminRequestDetailPage: FC = () => {
   return (
     <>
       <AdminHeader />
-      <div className='container'>
+      <div style={{ marginRight: 70, marginLeft: 70 }}>
         <h3 className='mt-4'>Информация о заявлении</h3>
-        <table>
+        <table className='responsive-table'>
           <thead className='striped'>
             <tr>
               <th>Кампания</th>
-              <th>Номинация</th>
+              <th>Критерий</th>
               <th>Статус</th>
               <th>Дата создания</th>
             </tr>
@@ -136,7 +136,7 @@ export const AdminRequestDetailPage: FC = () => {
           </tbody>
         </table>
         <h3 className='mt-4'>Информация о студенте</h3>
-        <table>
+        <table className='responsive-table'>
           <thead>
             <tr>
               <th>ФИО</th>
@@ -145,9 +145,16 @@ export const AdminRequestDetailPage: FC = () => {
               <th>Направление</th>
               <th>Форма обучения</th>
               <th>Источник финансирования</th>
-              <th>Уровень</th>
+              <th>Уровень образования</th>
               <th>Курс</th>
-              <th>Дата последнего изменения</th>
+              <th>ИНН</th>
+              <th>СНИЛС</th>
+              <th>Адрес прописки</th>
+              <th>Адрес проживания</th>
+              <th>Гражданство</th>
+              <th>Серия и номер паспорта</th>
+              <th>Кем и когда выдан</th>
+              <th>Код департамента</th>
             </tr>
           </thead>
           <tbody>
@@ -160,7 +167,20 @@ export const AdminRequestDetailPage: FC = () => {
               <td>{request?.student.financingSource}</td>
               <td>{request?.student.level}</td>
               <td>{request?.student.course}</td>
-              <td>{_(request?.changedDate)}</td>
+              <td>{request?.student.INN}</td>
+              <td>{request?.student.SNILS}</td>
+              <td>{request?.student.address}</td>
+              <td>{request?.student.fatcaddress}</td>
+              <td>{request?.student.citizenship}</td>
+              <td>
+                {request?.student.passport_seria}{' '}
+                {request?.student.passport_number}
+              </td>
+              <td>
+                {request?.student.passport_IssueBy}{' '}
+                {request?.student.passport_IssueDate}
+              </td>
+              <td>{request?.student.passport_DepartmentCode}</td>
             </tr>
           </tbody>
         </table>

@@ -39,7 +39,7 @@ function App() {
     //   }
     // }
 
-    login(1, 'Test', '', 'student')
+    login(1, 'Test', '', 'admin')
   }, [])
 
   const routes = useRouter()

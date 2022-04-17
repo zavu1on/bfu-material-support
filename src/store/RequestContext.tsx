@@ -92,7 +92,7 @@ export const RequestProvider = ({ children }: IProps) => {
       // fetch
 
       let resp = await $api.get('/api/requests/get/')
-      const requests: IRequest[] = resp.data
+      const requests = resp.data
 
       resp = await $api.get('/api/criterion/get/')
       const nominations = resp.data
@@ -126,6 +126,17 @@ export const RequestProvider = ({ children }: IProps) => {
               financingSource: r.student.source_finance,
               level: r.student.level,
               course: r.student.course,
+              INN: r.student.INN,
+              SNILS: r.student.SNILS,
+              address: r.student.address,
+              fatcaddress: r.student.factadress,
+              citizenship: r.student.citizenship,
+
+              passport_seria: r.student.passport_seria,
+              passport_number: r.student.passport_number,
+              passport_IssueDate: r.student.passport_IssueDate,
+              passport_IssueBy: r.student.passport_IssueBy,
+              passport_DepartmentCode: r.student.passport_DepartmentCode,
             },
             status: r.last_status,
             nomination: {

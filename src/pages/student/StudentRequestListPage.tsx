@@ -59,7 +59,7 @@ export const StudentRequestListPage: FC = () => {
         <table className='mt-4 striped'>
           <thead>
             <tr>
-              <th>Номинация</th>
+              <th>Критерий</th>
               <th>Статус</th>
               <th>Институт</th>
               <th>Направление</th>
@@ -123,7 +123,7 @@ export const StudentRequestListPage: FC = () => {
                   </option>
                 ))}
             </select>
-            <label>Номинация</label>
+            <label>Критерий</label>
           </div>
         </div>
         <div className='modal-footer'>

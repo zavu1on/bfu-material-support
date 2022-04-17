@@ -59,6 +59,17 @@ export interface IRequest {
     financingSource: string
     level: string
     course: number
+    INN: string
+    SNILS: string
+    address: string
+    fatcaddress: string
+    citizenship: string
+
+    passport_seria: string
+    passport_number: string
+    passport_IssueDate: string
+    passport_IssueBy: string
+    passport_DepartmentCode: string
   }
   status: string
   nomination: INomination
