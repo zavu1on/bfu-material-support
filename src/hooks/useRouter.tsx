@@ -52,14 +52,14 @@ export const useRouter = () => {
       </BrowserRouter>
     )
   }
-  // if (role === 'anonymous')
-  //   return (
-  //     <BrowserRouter>
-  //       <Routes>
-  //         <Route path='/authentication/' element={<StudentAuthPage />} />
-  //         <Route path='/admin/authentication/' element={<AdminAuthPage />} />
-  //         <Route path='*' element={<Navigate to='/authentication/' />} />
-  //       </Routes>
-  //     </BrowserRouter>
-  //   )
+  if (role === 'anonymous')
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path='/authentication/' element={<StudentAuthPage />} />
+          <Route path='/admin/authentication/' element={<AdminAuthPage />} />
+          <Route path='*' element={<Navigate to='/authentication/' />} />
+        </Routes>
+      </BrowserRouter>
+    )
 }
